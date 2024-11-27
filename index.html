@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./customCss/all.min.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./customCss/tailwindConfig.js"></script>
@@ -45,12 +46,10 @@
                 </div>
                 <div class="w-2/12">
                     <ul class="flex gap-x-4 justify-end">
-                        <li class="w-[47px] h-[47px] rounded-full bg-[#FF1E1E] flex justify-center items-center"><a
-                                href=""><img src="./images/facebook.png" alt=""></a></li>
-                        <li class="w-[47px] h-[47px] rounded-full bg-[#FF1E1E] flex justify-center items-center"><a
-                                href=""><img src="./images/twitter.png" alt=""></a></li>
-                        <li class="w-[47px] h-[47px] rounded-full bg-[#FF1E1E] flex justify-center items-center"><a
-                                href=""><img src="./images/twitter.png" alt=""></a></li>
+                        <li class="w-[47px] h-[47px] rounded-full bg-[#FF1E1E] text-white hover:bg-transparent hover:text-[#FF1E1E] border-tranparent hover:border-[#FF1E1E] border-[1px]  duration-300 flex justify-center items-center"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="w-[47px] h-[47px] rounded-full bg-[#FF1E1E] text-white hover:bg-transparent hover:text-[#FF1E1E] border-tranparent hover:border-[#FF1E1E] border-[1px]  duration-300 flex justify-center items-center"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li class="w-[47px] h-[47px] rounded-full bg-[#FF1E1E] text-white hover:bg-transparent hover:text-[#FF1E1E] border-tranparent hover:border-[#FF1E1E] border-[1px]  duration-300 flex justify-center items-center"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        
                     </ul>
                 </div>
 
@@ -145,43 +144,55 @@
                 through the program will ensure your desired job in the global market.</p>
 
             <div class="flex justify-center pt-[30px] pb-[60px]">
-                <div class="border-[#D9D9D9] border-[1px] p-2 rounded-[37px] inline-block ">
-                    <a class="bg-[#FF1E1E] py-4 px-16 rounded-[29px] text-2xl text-[#fff] font-inter font-semibold hover:bg-transparent hover:text-[#FF1E1E] duration-500  inline-block"
-                        href="">Courses</a>
-                    <a class="bg-[#FF1E1E] py-4 px-16 rounded-[29px] text-2xl text-[#fff] font-inter font-semibold hover:bg-transparent hover:text-[#FF1E1E] duration-500  inline-block"
-                        href="">Projects</a>
+                <div class="border-[#D9D9D9] border-[1px] p-2 rounded-[37px] ">
+                    <button id="courses-btn"
+                        class="flex-1 text-red-500 bg-white text-2xl text-[#fff] font-inter font-semibold rounded-full px-16 py-4 font-semibold transition duration-300"
+                        href="">Courses</button>
+                    <button id="projects-btn"
+                        class="flex-1 text-white bg-red-500 text-2xl text-[#fff] font-inter font-semibold rounded-full px-16 py-4 font-semibold transition duration-300"
+                        href="">Projects</button>
+
                 </div>
             </div>
 
             <div class="flex gap-x-[30px] justify-center ">
-                
-                <div class="w-[380px] bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-[20px] shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-[30px] pt-[30px] pb-[50px]">
-                    <div class="w-[122px] h-[122px] bg-[#FFF7EB] rounded-[20px] mb-[60px] flex justify-center items-center">
+
+                <div
+                    class="w-[380px] bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-[20px] shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-[30px] pt-[30px] pb-[50px]">
+                    <div
+                        class="w-[122px] h-[122px] bg-[#FFF7EB] rounded-[20px] mb-[60px] flex justify-center items-center">
                         <img src="./images/serviceImage1.png" alt="">
-                       
+
                     </div>
                     <h4 class="w-[254px] text-[32px] text-third font-bold font-inter ">Branding Identity Design</h4>
-                    <p class="text-base text-[#605F62] font-normal font-inter pt-4">We have designed our courses with the most demanding professional skills.</p>
+                    <p class="text-base text-[#605F62] font-normal font-inter pt-4">We have designed our courses with
+                        the most demanding professional skills.</p>
                 </div>
-                <div class="w-[380px] bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-[20px] shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-[30px] pt-[30px] pb-[50px]">
-                    <div class="w-[122px] h-[122px] bg-[#FFF7EB] rounded-[20px] mb-[60px] flex justify-center items-center">
+                <div
+                    class="w-[380px] bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-[20px] shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-[30px] pt-[30px] pb-[50px]">
+                    <div
+                        class="w-[122px] h-[122px] bg-[#FFF7EB] rounded-[20px] mb-[60px] flex justify-center items-center">
                         <img src="./images/serviceImage3.png" alt="">
-                       
+
                     </div>
                     <h4 class="w-[254px] text-[32px] text-third font-bold font-inter ">Web Application Development </h4>
-                    <p class="text-base text-[#605F62] font-normal font-inter pt-4">We have designed our courses with the most demanding professional skills.</p>
+                    <p class="text-base text-[#605F62] font-normal font-inter pt-4">We have designed our courses with
+                        the most demanding professional skills.</p>
                 </div>
-               
-                <div class="w-[380px] bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-[20px] shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-[30px] pt-[30px] pb-[50px]">
-                    <div class="w-[122px] h-[122px] bg-[#FFF7EB] rounded-[20px] mb-[60px] flex justify-center items-center">
+
+                <div
+                    class="w-[380px] bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-[20px] shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-[30px] pt-[30px] pb-[50px]">
+                    <div
+                        class="w-[122px] h-[122px] bg-[#FFF7EB] rounded-[20px] mb-[60px] flex justify-center items-center">
                         <img src="./images/serviceImage1.png" alt="">
-                       
+
                     </div>
                     <h4 class="w-[254px] text-[32px] text-third font-bold font-inter ">Social Media Marketing</h4>
-                    <p class="text-base text-[#605F62] font-normal font-inter pt-4">We have designed our courses with the most demanding professional skills.</p>
+                    <p class="text-base text-[#605F62] font-normal font-inter pt-4">We have designed our courses with
+                        the most demanding professional skills.</p>
                 </div>
-                
-                
+
+
 
 
 
@@ -368,51 +379,93 @@
                 Companies</span></h2>
         <h5 class="text-4xl text-third font-inter font-normal text-center pt-3 pb-[60px]">Are Connected to Us</h5>
         <div class="flex justify-center pt-[30px] pb-[60px]">
-            <div class="border-[#D9D9D9] border-[1px] p-2 rounded-[37px] inline-block ">
-                <a class="bg-[#FF1E1E] py-4 px-16 rounded-[29px] text-2xl text-[#fff] font-inter font-semibold hover:bg-transparent hover:text-[#FF1E1E] duration-500  inline-block"
-                    href="">Working with</a>
-                <a class="bg-[#FF1E1E] py-4 px-16 rounded-[29px] text-2xl text-[#fff] font-inter font-semibold hover:bg-transparent hover:text-[#FF1E1E] duration-500  inline-block"
-                    href="">Members of</a>
-                <a class="bg-[#FF1E1E] py-4 px-16 rounded-[29px] text-2xl text-[#fff] font-inter font-semibold hover:bg-transparent hover:text-[#FF1E1E] duration-500  inline-block"
-                    href="">Our Concerns</a>
+            <div class="flex justify-center pt-[30px] pb-[60px]">
+                <div class="border-[#D9D9D9] border-[1px] p-2 rounded-[37px] ">
+                    <button id="working-btn"
+                        class="flex-1 text-red-500 bg-white text-2xl text-[#fff] font-inter font-semibold rounded-full px-16 py-4 font-semibold transition duration-300"
+                        href="">Working with</button>
+
+                    <button id="members-btn"
+                        class="flex-1 text-white bg-red-500 text-2xl text-[#fff] font-inter font-semibold rounded-full px-16 py-4 font-semibold transition duration-300"
+                        href="">Members of</button>
+
+                    <button id="concerns-btn"
+                        class="flex-1 text-red-500 bg-white text-2xl text-[#fff] font-inter font-semibold rounded-full px-16 py-4 font-semibold transition duration-300"
+                        href="">Our Concerns</button>
+
+
+
+                </div>
             </div>
         </div>
         <div class="flex gap-7 flex-wrap justify-center">
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo5.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo9.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo5.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo9.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo5.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo9.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2"></div>
-            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3"></div>
-            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2"></div>
-           
-           
-           
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo3.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo5.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo7.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo9.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2">
+            </div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo3.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo5.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo7.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo9.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2">
+            </div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo3.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo3.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo5.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo7.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo9.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2">
+            </div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
+            </div>
+            <div class="w-[241.08px] h-[128px]"><img class="grayscale w-ful h-full" src="./images/logo7.png"
+                    alt="logo3"></div>
+            <div class="w-[128px] h-[128px]"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
+            </div>
+
+
+
 
 
 
@@ -430,10 +483,13 @@
             <div class="py-[100px] px-[97px] bg-[#FFF7EB] rounded-[48px]">
                 <div class="flex">
                     <div class="w-8/12">
-                        <h3 class="text-[60px] text-[#000] font-bold font-inter leading-[110%] pb-[30px]">Get in Touch <span class="italic text-primary block">with Us!</span></h3>
-                        
-                        <p class="text-base w-[566px] leading-[150%] text-[#4D4541] font-normal font-inter">We believe all of our students are part of the Creative IT family. We consider your comments with utmost importance to improve our services.</p>
-                        <div  class="pt-[70px]">
+                        <h3 class="text-[60px] text-[#000] font-bold font-inter leading-[110%] pb-[30px]">Get in Touch
+                            <span class="italic text-primary block">with Us!</span></h3>
+
+                        <p class="text-base w-[566px] leading-[150%] text-[#4D4541] font-normal font-inter">We believe
+                            all of our students are part of the Creative IT family. We consider your comments with
+                            utmost importance to improve our services.</p>
+                        <div class="pt-[70px]">
                             <a class="bg-[#FF1E1E] py-4 px-8 rounded-[42px] text-lg text-[#fff] font-inter font-medium hover:bg-transparent hover:text-[#FF1E1E] duration-500 border-[#FF1E1E] border-[1px] mr-5"
                                 href="">Get Started </a>
                             <a class="bg-[#FF1E1E] py-4 px-8 rounded-[42px] text-lg text-[#fff] font-inter font-medium hover:bg-transparent hover:text-[#FF1E1E] duration-500 border-[#FF1E1E] border-[1px]"
@@ -455,7 +511,7 @@
     <!-- ====================
          Footer part Start
      ==================== -->
-     <section class="pt-[370px] bg-third">
+    <section class="pt-[370px] bg-third">
         <div class="max-w-container mx-auto">
             <div class="flex border-b-[1px] border-[#FFFFFF1A] pb-[81px]">
 
@@ -463,102 +519,124 @@
                     <p class="text-[22px] text-[#fff] font-bold font-inter pb-[30px]">Contact Us</p>
                     <div class="flex gap-x-4 items-start pb-8">
                         <img src="./images/footerIcon.png" alt="">
-                        <div>  
+                        <div>
                             <strong class="text-2xl text-[#BCBBBB] font-bold italic font-trirong">Head Office</strong>
                             <ul class="text-base text-white font-medium font-inter pt-4 flex flex-col gap-y-1.5">
-                              <li>Momtaz Plaza (4th Floor)</li>
-                              <li>House # 07 , Road # 04</li>
-                              <li>Dhanmondi, Dhaka- 1205</li>
-                            
+                                <li>Momtaz Plaza (4th Floor)</li>
+                                <li>House # 07 , Road # 04</li>
+                                <li>Dhanmondi, Dhaka- 1205</li>
+
                             </ul>
                         </div>
                     </div>
                     <div class="flex gap-x-4 items-start pb-8">
                         <img src="./images/footerIcon.png" alt="">
-                        <div>  
+                        <div>
                             <strong class="text-2xl text-[#BCBBBB] font-bold italic font-trirong">Canada Office</strong>
                             <ul class="text-base text-white font-medium font-inter pt-4 flex flex-col gap-y-1.5">
-                              <li>Momtaz Plaza (4th Floor)</li>
-                              <li>House # 07 , Road # 04</li>
-                              <li>Dhanmondi, Dhaka- 1205</li>
-                            
+                                <li>Momtaz Plaza (4th Floor)</li>
+                                <li>House # 07 , Road # 04</li>
+                                <li>Dhanmondi, Dhaka- 1205</li>
+
                             </ul>
                         </div>
                     </div>
                     <div class="flex gap-x-4 items-center">
                         <img src="./images/footerIcon2.png" alt="">
-                        <div>  
-                           <a class="text-base text-[#BCBBBB] font-medium font-inter" href="">info@creativeitinstitute.com</a>
+                        <div>
+                            <a class="text-base text-[#BCBBBB] font-medium font-inter"
+                                href="">info@creativeitinstitute.com</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-1/5">
                     <p class="text-[22px] text-[#fff] font-bold font-inter pb-[30px]">Our Services</p>
                     <ul class="flex flex-col gap-y-6 ">
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Branding Identity Design</a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Logo Design</a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">App Development</a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Digital Marketing</a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Search Engine Optimization</a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Web Design</a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Branding Identity Design</a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Logo Design</a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">App Development</a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Digital Marketing</a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Search Engine Optimization</a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Web Design</a></li>
                     </ul>
                 </div>
                 <div class="w-1/5">
                     <p class="text-[22px] text-[#fff] font-bold font-inter pb-[30px]">Popular Courses</p>
                     <ul class="flex flex-col gap-y-6 ">
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Web Development
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Graphic Design
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Digital Marketing
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Web Development
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Graphic Design
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Digital Marketing
 
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Mern Stack Development
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Motion Graphics
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Professional 3D Animation
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Content Writing
-                        </a></li>
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Mern Stack Development
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Motion Graphics
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Professional 3D Animation
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Content Writing
+                            </a></li>
                     </ul>
                 </div>
                 <div class="w-1/5">
                     <p class="text-[22px] text-[#fff] font-bold font-inter pb-[30px]">Others</p>
                     <ul class="flex flex-col gap-y-6 ">
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">About Us
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Our Facility
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Our Achievement
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Career Placement
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Freelancing
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Students Feedback
-                        </a></li>
-                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500" href="">Contact
-                        </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">About Us
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Our Facility
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Our Achievement
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Career Placement
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Freelancing
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Students Feedback
+                            </a></li>
+                        <li><a class="text-base text-[#BCBBBB] font-medium font-inter hover:text-[#fff] duration-500"
+                                href="">Contact
+                            </a></li>
                     </ul>
                 </div>
-               
+
             </div>
             <div class="flex justify-between items-center py-10">
                 <img src="./images/footerLogo1.png" alt="">
-                <p class="text-base text-[#BCBBBB] font-hind font-normal">Copyright © 2024 Creative IT Institute. All right reserved</p>
+                <p class="text-base text-[#BCBBBB] font-hind font-normal">Copyright © 2024 Creative IT Institute. All
+                    right reserved</p>
                 <img src="./images/footerLogo2.png" alt="">
-                
+
             </div>
         </div>
-     </section>
+    </section>
     <!-- ====================
          Footer part End
      ==================== -->
 
 
 
-
+    <script src="./customJs/script.js"></script>
 </body>
 
 </html>
