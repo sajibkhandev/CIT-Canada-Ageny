@@ -12,6 +12,7 @@ tailwind.config = {
         fontFamily: {
           'inter': ["Inter", "sans-serif"],
           'trirong': ["Trirong", "serif"],
+          'hind': ["Hind", "sans-serif"],
         },
         backgroundImage: {
           "sajib1":"url(./images/serviceImage.png)"
