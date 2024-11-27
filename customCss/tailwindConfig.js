@@ -8,9 +8,14 @@ tailwind.config = {
         },
         maxWidth: {
           'container': '1320px',
-        },fontFamily: {
-          'inter': ["Inter", "sans-serif"],
         },
+        fontFamily: {
+          'inter': ["Inter", "sans-serif"],
+          'trirong': ["Trirong", "serif"],
+        },
+        backgroundImage: {
+          "sajib1":"url(./images/serviceImage.png)"
+        }
       }
     }
   }
