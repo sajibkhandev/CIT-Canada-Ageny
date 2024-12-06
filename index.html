@@ -20,9 +20,9 @@
   ===================== -->
   <section class="bg-custom-gradient py-1.5">
     <div class="max-w-container mx-auto">
-      <ul class="flex gap-x-14 text-base text-white font-medium font-inter">
-        <li><i class="fa-solid fa-phone pr-2"></i><span>01624888444</span></li>
-        <li><i class="fa-solid fa-envelope pr-2"></i><span>help@creativeitinstitute.com</span></li>
+      <ul class="flex justify-center gap-x-2 text-sm text-white font-medium font-inter    md:justify-start md:gap-x-14 md:text-base">
+        <li><i class="fa-solid fa-phone pr-0.5    md:pr-2"></i><span>01624888444</span></li>
+        <li><i class="fa-solid fa-envelope  pr-1    md:pr-2"></i><span>help@creativeitinstitute.com</span></li>
       </ul>
 
     </div>
@@ -35,7 +35,7 @@
   <!-- ====================
        Navber part Start
    ==================== -->
-  <nav class="py-10">
+  <nav class="py-10   hidden md:block">
     <div class="max-w-container mx-auto">
       <div class="flex items-center ">
         <div class="w-2/12">
@@ -62,6 +62,30 @@
       </div>
     </div>
   </nav>
+  <!-- Mobile Deivice start -->
+  <nav class="md:hidden py-3 px-5 ">
+    <div class="max-w-container mx-auto">
+      <div class="flex justify-between items-center">
+       <div>
+        <img class="w-1/2" src="./images/navberLogo.png" alt="">
+       </div>
+       <div id="menu-button" class="flex justify-center items-center w-[26px] h-[26px] text-[#8B8B8B] text-[10px] border border-[#8B8B8B] rounded-full">
+        <button >
+          <i id="menu-icon" class="fa-solid fa-bars "></i>
+          <i id="close-icon" class="fa-solid fa-xmark hidden text-[11px]"></i>
+        </button>
+       </div>
+       <ul id="mobile-menu" class="hidden w-full flex flex-col items-center gap-y-3 py-7 mx-auto absolute top-[80px] right-0 bg-[#F7FCE7] cursor-pointer ">
+        <li><a class="text-[10px] text-secondary font-semibold font-inter" href="">Home</a> </li>
+        <li><a class="text-[10px] text-secondary font-semibold font-inter" href="">About us</a> </li>
+        <li><a class="text-[10px] text-secondary font-semibold font-inter" href="">Service</a> </li>
+        <li><a class="text-[10px] text-secondary font-semibold font-inter" href="">Freelancing</a> </li>
+        <li><a class="text-[10px] text-secondary font-semibold font-inter" href="">Contact</a> </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Deivice end -->
   <!-- ====================
        Navber part End
    ==================== -->
@@ -71,7 +95,8 @@
        Banner part Start
    ==================== -->
   <section>
-    <a href=""> <img class="mx-auto" src="./images/banner.png" alt="Banner Image"></a>
+    <a class="hidden md:block" href=""> <img class="mx-auto" src="./images/banner.png" alt="Banner Image"></a>
+    <a class="md:hidden" href=""> <img class="mx-auto pt-5" src="./images/mobileBanner.png" alt="Banner Image"></a>
   </section>
   <!-- ====================
        Banner part End
@@ -81,26 +106,26 @@
   <!-- ====================
        Achivement part Start
    ==================== -->
-  <section class="py-100">
+  <section class="py-10 md:py-100">
     <div class="max-w-container mx-auto">
-      <h2 class="text-center pb-60 text-5xl text-third font-inter font-bold ">Showcase Of Our <span
+      <h2 class="text-center pb-10 text-32 md:text-5xl text-third font-inter font-bold    md:pb-60">Showcase Of Our <span
           class="text-transparent bg-clip-text bg-custom-gradient2 italic">Achievements</span></h2>
-      <div class="flex justify-between">
-        <div>
-          <h4 class="text-7xl text-transparent bg-clip-text bg-custom-gradient2 font-inter font-extrabold">57</h4>
-          <p class="text-2xl text-black font-inter font-medium">Clients</p>
+      <div class="flex justify-center gap-x-7 gap-y-16 flex-wrap    md:justify-between md:gap-x-0 md:gap-y-0 md:flex-nowrap">
+        <div class="w-1/3 pl-5    md:pl-0 md:w-auto">
+          <h4 class="text-5xl md:text-7xl text-transparent bg-clip-text bg-custom-gradient2 font-inter font-extrabold">57</h4>
+          <p class="text-sm md:text-2xl text-black font-inter font-medium">Clients</p>
         </div>
-        <div>
-          <h4 class="text-7xl text-transparent bg-clip-text bg-custom-gradient2 font-inter font-extrabold">93</h4>
-          <p class="text-2xl text-black font-inter font-medium">Projects</p>
+        <div class="w-1/3 pl-5    md:pl-0 md:w-auto">
+          <h4 class="text-5xl md:text-7xl text-transparent bg-clip-text bg-custom-gradient2 font-inter font-extrabold">93</h4>
+          <p class="text-sm md:text-2xl text-black font-inter font-medium">Projects</p>
         </div>
-        <div>
-          <h4 class="text-7xl text-transparent bg-clip-text bg-custom-gradient2 font-inter font-extrabold">600</h4>
-          <p class="text-2xl text-black font-inter font-medium">Employees</p>
+        <div class="w-1/3 pl-5    md:pl-0 md:w-auto">
+          <h4 class="text-5xl md:text-7xl text-transparent bg-clip-text bg-custom-gradient2 font-inter font-extrabold">600</h4>
+          <p class="text-sm md:text-2xl text-black font-inter font-medium">Employees</p>
         </div>
-        <div>
-          <h4 class="text-7xl text-transparent bg-clip-text bg-custom-gradient2 font-inter font-extrabold">25</h4>
-          <p class="text-2xl text-black font-inter font-medium">Awards</p>
+        <div class="w-1/3 pl-5    md:pl-0 md:w-auto">
+          <h4 class="text-5xl md:text-7xl text-transparent bg-clip-text bg-custom-gradient2 font-inter font-extrabold">25</h4>
+          <p class="text-sm md:text-2xl text-black font-inter font-medium">Awards</p>
         </div>
       </div>
     </div>
@@ -113,28 +138,28 @@
   <!-- ====================
        Client part Start
    ==================== -->
-  <section class="w-[1440px] mx-auto bg-[#F7FCE7] rounded-3xl ">
+  <section class="md:w-[1440px] mx-2.5 py-30 px-5 md:mx-auto bg-[#F7FCE7] rounded-3xl ">
     <div class="max-w-container mx-auto">
-      <div class="flex items-center">
-        <div class="w-1/2">
-          <h3 class="text-2xl text-transparent bg-clip-text bg-custom-gradient2 italic font-bold font-trirong ">We started back in 2008.</h3>
-          <h2 class="w-[620px] pt-2 pb-30 text-40 text-secondary font-bold font-inter leading-[120%]">
+      <div class="md:flex items-center">
+        <div class="md:w-1/2">
+          <h3 class="text-xl md:text-2xl text-transparent bg-clip-text bg-custom-gradient2 italic font-bold font-trirong ">We started back in 2008.</h3>
+          <h2 class="md:w-[620px] pt-2 pb-30 text-2xl md:text-40 text-secondary font-bold font-inter leading-[120%]">
             Since then, we have been travelling towards one goal creating a supreme experience for our
             clients.</h2>
-          <p class="pb-60 text-base text-four font-inter font-normal ">We have designed our courses
+          <p class="pb-30 md:pb-60 text-sm md:text-base text-four font-inter font-normal ">We have designed our courses
             with the most demanding professional skills. The knowledge, experience, and expertise gained
             through the program will ensure your desired job in the global market.</p>
           <div>
-              <a class="inline-block bg-custom-gradient mr-5 py-4 px-8 text-lg text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#F7FCE7] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]"
+              <a class="inline-block bg-custom-gradient mr-3 py-3 px-5 text-sm text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#F7FCE7] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]    md:py-4 md:px-8 md:text-lg"
               href="#"><span class="relative z-10">Get Started</span></a>
-              <a class="inline-block bg-custom-gradient mr-5 py-4 px-8 text-lg text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#F7FCE7] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]"
+              <a class="inline-block bg-custom-gradient mr-5 py-3 px-5 text-sm text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#F7FCE7] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]    md:py-4 md:px-8 md:text-lg"
               href="#"><span class="relative z-10">Explore more</span></a>
 
           </div>
         </div>
-        <div class="w-1/2 relative pt-20 pb-60">
+        <div class="relative pt-20    md:w-1/2  md:pb-60">
           <div class="flex justify-end"><img src="./images/clientBanner1.png" alt="Client Banner1"></div>
-          <div class="absolute top-9 left-0"><img src="./images/clientBanner2.png" alt="Client Banner2"></div>
+          <div class="absolute top-[40px] -right-[90px] right-0    md:top-9 md:left-0"><img class="w-[55%]    md:w-auto" src="./images/clientBanner2.png" alt="Client Banner2"></div>
         </div>
       </div>
     </div>
@@ -147,57 +172,104 @@
   <!-- ====================
        Service part Start
    ==================== -->
-  <section class="py-100">
+  <section class="py-14  px-5     md:py-100 md:px-0">
     <div class="max-w-container mx-auto">
-      <h2 class="text-center pb-8 text-5xl text-third font-inter font-bold ">Our <span
+      <h2 class="text-center mx-2.5 pb-6 text-32 text-third font-inter font-bold    md:mx-0 md:pb-8 md:text-5xl">Our <span
           class="text-transparent bg-clip-text bg-custom-gradient2 italic">Services</span></h2>
-      <p class="w-[815px] text-center  mx-auto text-base text-four font-normal font-inter">We have designed
+      <p class="text-center mx-auto text-sm text-four font-normal font-inter    md:w-[815px] md:text-base">We have designed
         our courses with the most demanding professional skills. The knowledge, experience, and expertise gained
         through the program will ensure your desired job in the global market.</p>
 
-      <div class="flex justify-center pt-30 pb-60">
+      <div class="flex justify-center pt-30 pb-12     md:pb-60">
         <div class="p-2 border-five border rounded-37 ">
           <button id="courses-btn"
-            class="flex-1 px-16 py-4 text-2xl font-inter font-semibold text-red-500 bg-white  rounded-full transition duration-300"
+            class="flex-1 px-7 p-3 text-base font-inter font-semibold text-red-500 bg-white  rounded-full transition duration-300    md:text-2xl md:px-16 md:py-4"
             href="">Courses</button>
           <button id="projects-btn"
-            class="flex-1 px-16 py-4 text-2xl font-inter font-semibold text-white bg-red-500  rounded-full transition duration-300"
+            class="flex-1 px-7 p-3 text-base font-inter font-semibold text-white bg-red-500  rounded-full transition duration-300    md:text-2xl md:px-16 md:py-4"
             href="">Projects</button>
 
         </div>
       </div>
 
-      <div class="flex gap-x-30 justify-center ">
+      <!-- Project Part Start -->
+      <div id="project-part" class="">
+        <div id="project-part" class="md:flex gap-x-30 justify-center">
 
-        <div
-          class="w-[380px] bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-20 shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-30 pt-30 pb-50">
-          <div class="flex justify-center items-center w-[122px] h-[122px] bg-[#FFF7EB] rounded-20 mb-60 ">
-            <img src="./images/serviceImage1.png" alt="">
-
+          <div
+            class="px-30 bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-20 shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-30 pt-30 pb-50 mb-30    md:mb-0">
+            <div class="flex justify-center items-center w-[92px] h-[92px] md:w-[122px] md:h-[122px] bg-[#FFF7EB] rounded-20  mb-30     md:mb-60">
+              <img class="w-[65%] md:w-auto" src="./images/serviceImage1.png" alt="">
+  
+            </div>
+            <h4 class="w-[254px] text-2xl text-third font-bold font-inter learning-[130%]    md:text-32">Branding Identity Design</h4>
+            <p class="pt-4 text-sm md:text-base text-four font-normal font-inter    md:w-[320px] ">We have designed our courses with the most demanding professional skills.</p>
           </div>
-          <h4 class="w-[254px] text-32 text-third font-bold font-inter ">Branding Identity Design</h4>
-          <p class=" pt-4 text-base text-four font-normal font-inter ">We have designed our courses with the most demanding professional skills.</p>
-        </div>
-        <div
-          class="w-[380px] bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-20 shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-30 pt-30 pb-50">
-          <div class="flex justify-center items-center w-[122px] h-[122px] bg-[#FFF7EB] rounded-20 mb-60 ">
-            <img src="./images/serviceImage3.png" alt="">
-
+          
+          <div
+            class="px-30 bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-20 shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-30 pt-30 pb-50 mb-30    md:mb-0">
+            <div class="flex justify-center items-center w-[92px] h-[92px] md:w-[122px] md:h-[122px] bg-[#FFF7EB] rounded-20  mb-30     md:mb-60">
+              <img class="w-[65%] md:w-auto" src="./images/serviceImage1.png" alt="">
+  
+            </div>
+            <h4 class="w-[254px] text-2xl text-third font-bold font-inter learning-[130%]    md:text-32">Branding Identity Design</h4>
+            <p class="pt-4 text-sm md:text-base text-four font-normal font-inter    md:w-[320px] ">We have designed our courses with the most demanding professional skills.</p>
           </div>
-          <h4 class="w-[254px] text-32 text-third font-bold font-inter ">Web Application Development</h4>
-          <p class=" pt-4 text-base text-four font-normal font-inter ">We have designed our courses with the most demanding professional skills.</p>
-        </div>
-        <div
-          class="w-[380px] bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-20 shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-30 pt-30 pb-50">
-          <div class="flex justify-center items-center w-[122px] h-[122px] bg-[#FFF7EB] rounded-20 mb-60 ">
-            <img src="./images/serviceImage1.png" alt="">
-
+          
+          <div
+            class="px-30 bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-20 shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-30 pt-30 pb-50 mb-30    md:mb-0">
+            <div class="flex justify-center items-center w-[92px] h-[92px] md:w-[122px] md:h-[122px] bg-[#FFF7EB] rounded-20  mb-30     md:mb-60">
+              <img class="w-[65%] md:w-auto" src="./images/serviceImage1.png" alt="">
+  
+            </div>
+            <h4 class="w-[254px] text-2xl text-third font-bold font-inter learning-[130%]    md:text-32">Branding Identity Design</h4>
+            <p class="pt-4 text-sm md:text-base text-four font-normal font-inter    md:w-[320px] ">We have designed our courses with the most demanding professional skills.</p>
           </div>
-          <h4 class="w-[254px] text-32 text-third font-bold font-inter ">Social Media Marketing</h4>
-          <p class=" pt-4 text-base text-four font-normal font-inter ">We have designed our courses with the most demanding professional skills.</p>
+          
+          
+  
         </div>
-
       </div>
+      <!-- Project Part End -->
+      <!-- Course Part Start -->
+      <div id="course-part" class="hidden">
+        <div class="md:flex gap-x-30 justify-center">
+
+          <div
+            class="px-30 bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-20 shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-30 pt-30 pb-50 mb-30    md:mb-0">
+            <div class="flex justify-center items-center w-[92px] h-[92px] md:w-[122px] md:h-[122px] bg-[#FFF7EB] rounded-20  mb-30     md:mb-60">
+              <img class="w-[65%] md:w-auto" src="./images/serviceImage3.png" alt="">
+  
+            </div>
+            <h4 class="w-[254px] text-2xl text-third font-bold font-inter learning-[130%]    md:text-32">Social Media Marketing</h4>
+            <p class="pt-4 text-sm md:text-base text-four font-normal font-inter    md:w-[320px] ">We have designed our courses with the most demanding professional skills.</p>
+          </div>
+          
+          <div
+            class="px-30 bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-20 shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-30 pt-30 pb-50 mb-30    md:mb-0">
+            <div class="flex justify-center items-center w-[92px] h-[92px] md:w-[122px] md:h-[122px] bg-[#FFF7EB] rounded-20  mb-30     md:mb-60">
+              <img class="w-[65%] md:w-auto" src="./images/serviceImage3.png" alt="">
+  
+            </div>
+            <h4 class="w-[254px] text-2xl text-third font-bold font-inter learning-[130%]    md:text-32">Social Media Marketing</h4>
+            <p class="pt-4 text-sm md:text-base text-four font-normal font-inter    md:w-[320px] ">We have designed our courses with the most demanding professional skills.</p>
+          </div>
+          
+          <div
+            class="px-30 bg-gradient-to-br from-[#EBF3FE] via-[#FFFFFF] to-[#FEECEB] rounded-20 shadow-[0px_10px_30px_rgba(0,0,0,0.05)] px-30 pt-30 pb-50 mb-30    md:mb-0">
+            <div class="flex justify-center items-center w-[92px] h-[92px] md:w-[122px] md:h-[122px] bg-[#FFF7EB] rounded-20  mb-30     md:mb-60">
+              <img class="w-[65%] md:w-auto" src="./images/serviceImage3.png" alt="">
+  
+            </div>
+            <h4 class="w-[254px] text-2xl text-third font-bold font-inter learning-[130%]    md:text-32">Social Media Marketing</h4>
+            <p class="pt-4 text-sm md:text-base text-four font-normal font-inter    md:w-[320px] ">We have designed our courses with the most demanding professional skills.</p>
+          </div>
+          
+          
+  
+        </div>
+      </div>
+      <!-- Course Part End -->
 
 
     </div>
@@ -210,11 +282,11 @@
   <!-- ====================
       Feedback part Start
    ==================== -->
-  <section class="bg-[#FBFBFB] py-100">
+  <section class="bg-[#FBFBFB] py-10 md:py-100">
 
-    <h2 class=" text-center pb-60 text-5xl text-third font-inter font-bold ">Our Clients <span
+    <h2 class=" text-center pb-6  text-32 text-third font-inter font-bold mx-7     md:pb-60 md:mx-0 md:text-5xl">Our Clients <span
         class="text-transparent bg-clip-text bg-custom-gradient2 italic">Feedback</span></h2>
-    <div class="flex gap-6 flex-wrap justify-center">
+    <div class="flex gap-6 flex-wrap justify-center mx-5">
 
       <div class="w-[308px] bg-white rounded-xl  p-6">
         <p class="text-base text-four font-inter font-normal pb-6 leading-[150%]">Creative IT is one of the
@@ -350,7 +422,7 @@
 
     </div>
     <div class="text-center mt-20">
-      <a class="inline-block bg-custom-gradient mr-5 py-4 px-8 text-lg text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#FBFBFB] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]"
+      <a class="inline-block bg-custom-gradient mr-5 py-3 px-5 text-sm text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#FBFBFB] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]    md:py-4 md:px-8 md:text-lg"
       href="#"><span class="relative z-10">See All Feedback</span></a>
     </div>
 
@@ -366,7 +438,7 @@
        Virtual part Start
    ==================== -->
 
-  <section class="bg-[#FBFBFB] pb-100">
+  <section class="bg-[#FBFBFB] pb-10 px-2.5    md:pb-100 md:px-0">
     <img class="mx-auto" src="./images/virtualTour.png" alt="virtual Tour">
   </section>
   <!-- ====================
@@ -377,23 +449,23 @@
   <!-- ====================
        Companies part Start
    ==================== -->
-  <section class="pt-100">
-    <h2 class="text-center text-5xl text-third font-inter font-bold  "><span class="text-transparent bg-clip-text bg-custom-gradient2 italic">700+
+  <section class="pt-10 md:pt-100 ">
+    <h2 class="text-center text-32 md:text-5xl text-third font-inter font-bold  "><span class="text-transparent bg-clip-text bg-custom-gradient2 italic">700+
         Companies</span></h2>
-    <h5 class="text-center pt-3 pb-60 text-4xl text-third font-inter font-normal ">Are Connected to Us</h5>
-    <div class="flex justify-center pt-30 pb-60">
+    <h5 class="text-center pt-3 pb-5 md:pb-60 text-xl md:text-4xl text-third font-inter font-normal ">Are Connected to Us</h5>
+    <div class="flex justify-center md:pt-30 md:pb-60">
       <div class="flex justify-center pt-30 pb-60">
         <div class="border-five border p-2 rounded-[37px] ">
           <button id="working-btn"
-            class="flex-1 text-red-500 bg-white text-2xl text-red-500 font-inter font-semibold rounded-full px-16 py-4 font-semibold transition duration-300"
+            class="flex-1 text-red-500 bg-white text-xs md:text-2xl text-red-500 font-inter font-semibold rounded-full px-3 py-3 md:px-16 md:py-4 font-semibold transition duration-300"
             href="">Working with</button>
 
           <button id="members-btn"
-            class="flex-1 text-white bg-red-500 text-2xl text-red-500 font-inter font-semibold rounded-full px-16 py-4 font-semibold transition duration-300"
+            class="flex-1 text-white bg-red-500 text-xs md:text-2xl text-red-500 font-inter font-semibold rounded-full px-3 py-3 md:px-16 md:py-4 font-semibold transition duration-300"
             href="">Members of</button>
 
           <button id="concerns-btn"
-            class="flex-1 text-red-500 bg-white text-2xl text-red-500 font-inter font-semibold rounded-full px-16 py-4 font-semibold transition duration-300"
+            class="flex-1 text-red-500 bg-white text-xs md:text-2xl text-red-500 font-inter font-semibold rounded-full px-3 py-3 md:px-16 md:py-4 font-semibold transition duration-300"
             href="">Our Concerns</button>
 
 
@@ -401,70 +473,70 @@
         </div>
       </div>
     </div>
-    <div class="flex gap-7 flex-wrap justify-center">
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2">
+    <div class="flex gap-3 md:gap-7 flex-wrap justify-center">
+      <div class="w-118 md:w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo5.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo5.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo9.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo9.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo5.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo5.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo9.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo9.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo2.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo3.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo4.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo5.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo5.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo9.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo9.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo13.png" alt="logo2">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo6.png" alt="logo2">
       </div>
-      <div class="w-242 h-128"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3">
+      <div class="w-207 md:w-242 h-118 md:h-128"><img class="grayscale w-ful h-full" src="./images/logo7.png" alt="logo3">
       </div>
-      <div class="w-128 h-128"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
+      <div class="w-118 md:w-128 h-118 md:h-128"><img class="grayscale w-full h-full" src="./images/logo8.png" alt="logo2">
       </div>
 
 
@@ -483,24 +555,24 @@
   <!-- ====================
        Contact part Start
    ==================== -->
-  <section class="translate-y-[270px]">
+  <section class="translate-y-[97px] md:translate-y-[270px]">
     <div class="max-w-container mx-auto">
-      <div class="py-100 px-[97px] bg-[#FFF7EB] rounded-[48px]">
-        <div class="flex">
-          <div class="w-8/12">
-            <h3 class="pb-30 text-6xl text-black font-bold font-inter leading-[110%] ">Get in Touch
+      <div class="py-8 px-6 md:py-100 md:px-[97px] bg-[#FFF7EB] rounded-[40px] md:rounded-[48px] mx-2.5 md:mx-0">
+        <div class="md:flex">
+          <div class="md:w-8/12">
+            <h3 class="pb-30 text-[40px] md:text-6xl text-black font-bold font-inter leading-[110%] ">Get in Touch
               <span class="block text-primary italic  ">with Us!</span>
             </h3>
 
-            <p class="w-[566px] text-base  text-[#4D4541] font-normal font-inter leading-[150%]">We believe all of our students are part of the Creative IT family. We consider your comments with utmost importance to improve our services.</p>
-            <div class="pt-70">
-              <a class="inline-block bg-custom-gradient mr-5 py-4 px-8 text-lg text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#FFF7EB] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]"
+            <p class="md:w-[566px] text-sm md:text-base  text-[#4D4541] font-normal font-inter leading-[150%]">We believe all of our students are part of the Creative IT family. We consider your comments with utmost importance to improve our services.</p>
+            <div class="pt-8 md:pt-70 pb-10 md:pb-0">
+              <a class="inline-block bg-custom-gradient mr-3 md:mr-5 py-3 px-4 md:py-4 md:px-8 text-sm md:text-lg text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#FFF7EB] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]"
               href="#"><span class="relative z-10">Get Started</span></a>
-              <a class="inline-block bg-custom-gradient mr-5 py-4 px-8 text-lg text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#FFF7EB] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]"
+              <a class="inline-block bg-custom-gradient mr-3 md:mr-5 py-3 px-4 md:py-4 md:px-8 text-sm md:text-lg text-white font-medium font-inter border border-transparent rounded-42 duration-500 hover:border-[#CF0000] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#FFF7EB] after:duration-500 after:rounded-42 after:z-0 z-10 overflow-hidden hover:text-[#CF0000]"
               href="#"><span class="relative z-10">Explore more</span></a>
             </div>
           </div>
-          <div class="w-4/12">
+          <div class="md:w-4/12">
             <img class="ml-auto" src="./images/contact.png" alt="Contact">
           </div>
         </div>
@@ -517,11 +589,11 @@
   <!-- ====================
        Footer part Start
    ==================== -->
-  <section class="pt-[370px] bg-third">
+  <section class="pt-[150px] px-6 md:px-0 md:pt-[370px] bg-third">
     <div class="max-w-container mx-auto">
-      <div class="flex pb-20 border-b border-[#FFFFFF1A] ">
+      <div class="md:flex pb-10  md:pb-20 border-b border-[#FFFFFF1A] ">
 
-        <div class="w-2/5">
+        <div class="md:w-2/5">
           <p class="text-22 text-white font-bold font-inter pb-30">Contact Us</p>
           <div class="flex gap-x-4 items-start pb-8">
             <img src="./images/footerIcon.png" alt="">
@@ -554,7 +626,7 @@
             </div>
           </div>
         </div>
-        <div class="w-1/5">
+        <div class="md:w-1/5 pt-10 md:pt-0">
           <p class="text-22 text-white font-bold font-inter pb-30">Our Services</p>
           <ul class="flex flex-col gap-y-6 ">
             <li><a class="text-base text-seven font-medium font-inter hover:text-white duration-500"
@@ -571,7 +643,7 @@
                 Design</a></li>
           </ul>
         </div>
-        <div class="w-1/5">
+        <div class="md:w-1/5 pt-10 md:pt-0">
           <p class="text-22 text-white font-bold font-inter pb-30">Popular Courses</p>
           <ul class="flex flex-col gap-y-6 ">
             <li><a class="text-base text-seven font-medium font-inter hover:text-white duration-500" href="">Web
@@ -598,7 +670,7 @@
               </a></li>
           </ul>
         </div>
-        <div class="w-1/5">
+        <div class="md:w-1/5 pt-10 md:pt-0">
           <p class="text-22 text-white font-bold font-inter pb-30">Others</p>
           <ul class="flex flex-col gap-y-6 ">
             <li><a class="text-base text-seven font-medium font-inter hover:text-white duration-500" href="">About
@@ -626,12 +698,25 @@
         </div>
 
       </div>
+    <div class="hidden md:block">
       <div class="flex justify-between items-center py-10">
         <img src="./images/footerLogo1.png" alt="">
         <p class="text-base text-seven font-hind font-normal">Copyright © 2024 Creative IT Institute. All right reserved</p>
         <img src="./images/footerLogo2.png" alt="">
 
       </div>
+    </div>
+   <!-- Mobile Device -->
+   <div class="block md:hidden">
+    <div class="flex justify-between items-center py-10">
+      <img class="w-[45%]" src="./images/footerLogo1.png" alt="">
+      <img class="w-[40%]" src="./images/footerLogo2.png" alt="">
+     
+
+    </div>
+    <p class="text-xs md:text-base text-seven font-hind font-normal pb-5">Copyright © 2024 Creative IT Institute. All right reserved</p>
+  </div>
+   <!-- Mobile Device -->
     </div>
   </section>
   <!-- ====================
