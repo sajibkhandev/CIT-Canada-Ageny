@@ -89,16 +89,19 @@ function toggleActiveButton(activeButton) {
 
   
 // Responsive Button Start
-const menuButton = document.getElementById('menu-button');
+const menuButton = document.querySelectorAll('.menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 const menuIcon = document.getElementById('menu-icon');
 const closeIcon = document.getElementById('close-icon');
 // Responsive Button Start
 
 // Responsive Button Start
-menuButton.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-  menuIcon.classList.toggle('hidden');
-  closeIcon.classList.toggle('hidden');
-});
+let allButton=Array.from(menuButton)
+allButton.map(item=>{
+  item.addEventListener("click",function(){
+    mobileMenu.classList.toggle('hidden');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  })
+})
 // Responsive Button Start
