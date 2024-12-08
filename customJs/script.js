@@ -93,15 +93,16 @@ const menuButton = document.querySelectorAll('.menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 const menuIcon = document.getElementById('menu-icon');
 const closeIcon = document.getElementById('close-icon');
-// Responsive Button Start
+const body = document.body; 
 
-// Responsive Button Start
-let allButton=Array.from(menuButton)
-allButton.map(item=>{
-  item.addEventListener("click",function(){
-    mobileMenu.classList.toggle('hidden');
-    menuIcon.classList.toggle('hidden');
-    closeIcon.classList.toggle('hidden');
-  })
-})
-// Responsive Button Start
+
+let allButton = Array.from(menuButton);
+allButton.map(item => {
+  item.addEventListener("click", function () {
+    mobileMenu.classList.toggle('hidden'); 
+    menuIcon.classList.toggle('hidden');  
+    closeIcon.classList.toggle('hidden'); 
+    body.classList.toggle('no-scroll');  
+  });
+});
+// Responsive Button End
