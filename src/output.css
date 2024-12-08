@@ -620,6 +620,30 @@ video {
   top: 60px;
 }
 
+.right-\[90px\] {
+  right: 90px;
+}
+
+.right-\[0px\] {
+  right: 0px;
+}
+
+.-left-0 {
+  left: -0px;
+}
+
+.left-full {
+  left: 100%;
+}
+
+.left-\[100\%\] {
+  left: 100%;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
